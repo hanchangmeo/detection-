@@ -3,7 +3,7 @@ creation_date = "2025/4/22"
 
 [rule]
 author = ["han chang "]
-description = "Using Zeek HTTP data, we're looking at .bat file extensions on any destination port that isn't port 80."
+description = "Using Zeek HTTP data, we're looking at .txt file extensions on any destination port that isn't port 80."
 from = "now-6m"
 name = "Bat files observed in HTTP Traffic on Unusual Port "
 risk_score = 100
@@ -11,7 +11,7 @@ severity = "medium"
 type = "query"
 rule_id = "00000000-0000-0000-0000-000000000001"
 query = '''
-event.dataset: zeek.http and url.extension : bat and not destination.port : 80
+event.dataset: zeek.http and url.extension : txt and not destination.port : 80
 '''
 
 [[rule.threat]]
