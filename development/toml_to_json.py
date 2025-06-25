@@ -2,7 +2,7 @@ import requests
 import os
 import tomllib
 
-url = "https://detect.kb.us-east-2.aws.elastic-cloud.com//api/detection_engine/rules"
+url = "https://1aa303d1b434461db0e3e428b4a7394a.us-central1.gcp.cloud.es.io/api/detection_engine/rules"
 api_key = os.environ['ELASTIC_KEY']
 headers = {
     'Content-Type': 'application/json;charset=UTF-8',
